@@ -1,0 +1,10 @@
+JAVA_CLASSPATH="jakarta-oro.jar"
+inherit ant
+
+DESCRIPTION="Java Internet client protocol library"
+HOMEPAGE="http://commons.apache.org/net/"
+SRC_URI="mirror://apache/${ORIG_PN//-//}/source/${ORIG_PN}-${PV}-src.tar.gz"
+
+ANT_BUILD_TARGETS="jar javadoc"
+ANT_INSTALL_JARS="target/*.jar"
+ANT_INSTALL_JAVADOC="dist/docs/api"
